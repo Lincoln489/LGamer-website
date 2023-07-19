@@ -5,14 +5,17 @@
     text-decoration: none;
 
 }
+
 /* common css */
-.flex{
+.flex {
     display: flex;
 }
-.vert-center{
+
+.vert-center {
     align-items: center;
 }
-.btn{
+
+.btn {
     border: none;
     color: #FFF;
     font-size: 1rem;
@@ -22,17 +25,20 @@
     padding: 15px 30px;
     margin-top: 20px;
 }
+
 /* heading css */
 header {
     padding: 15px 120px;
 }
 
-nav {    
+nav {
     justify-content: space-between;
-    
+
 }
+
 .site-logo img {
     width: 3rem;
+    margin-right: 15px;
 }
 
 .site-logo h3 {
@@ -77,11 +83,12 @@ nav {
 
 /* nav end */
 /* banner css */
-.banner-container {   
-    justify-content: center;    
+.banner-container {
+    justify-content: center;
     gap: 40px;
 }
-.banner-info{
+
+.banner-info {
     padding-right: 160px;
 }
 
@@ -128,10 +135,101 @@ nav {
     width: 100%;
     text-align: right;
 }
-.btn-1 {    
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));    
-    margin-right: 15px;
+
+.btn-1 {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+
 }
-.btn-2{
+
+.btn-2 {
+    margin-left: 15px;
     background: #4EC5F7;
+}
+/* about-us css */
+.about-us{
+    margin-top: 20px;
+}
+.about-purpose {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.about-purpose span {
+    color: #534C64;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-menu {
+        padding: 0;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+        margin: 0 16px;
+
+    }
+
+    .site-logo {
+        display: grid;
+    }
+
+    .social-icon img {
+        width: 10px;
+        margin: 0;
+    }
+}
+
+/* about-us css */
+.about-us {
+    padding: 15px 120px;
+    gap: 30px
+}
+
+.about-img img {
+    width: 650px;
+}
+
+.about-info {
+    text-align: right;
+}
+
+.about-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-des {
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 40px;
+    }
+
+    .banner-info {
+        padding-right: 40px;
+    }
+
 }
