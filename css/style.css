@@ -26,6 +26,15 @@
     margin-top: 20px;
 }
 
+.big-img {
+    width: 450px;
+
+}
+
+.small-img {
+    width: 230px;
+}
+
 /* heading css */
 header {
     padding: 15px 120px;
@@ -190,6 +199,7 @@ nav {
     font-weight: 400;
     line-height: 20px;
 }
+
 /* funny-game section css */
 
 .funny-game {
@@ -240,11 +250,84 @@ nav {
     line-height: 30px;
 }
 
+/* online-games css */
+.online-games {
+    padding: 15px 120px;
+}
 
+.online-game-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    gap: 40px;
 
+}
 
+.online-game-part1-info {
+    padding-left: 150px;
+    padding-right: 180px;
+}
 
+.online-games-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 45px;
+    color: #0B0223 !important;
+    margin-bottom: 5px;
 
+}
+
+.online-games-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-games-des {
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.online-game-part2 {
+    position: relative;
+
+}
+
+.online-game-part2 .position {
+    position: absolute;
+    bottom: -10%;
+    left: -20%;
+}
+
+/* online game first section end */
+.online-game-content2 {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+}
+
+.online-game-part3 {
+    position: relative;
+
+}
+
+.online-game-part3 .position2 {
+    position: absolute;
+    bottom: -10%;
+    right: -20%;
+}
+
+.online-game-part4-info {
+    padding-left: 180px;
+    padding-right: 40px;
+}
 
 
 
@@ -320,22 +403,66 @@ nav {
     .about-purpose span {
         font-size: 16px;
     }
+
     /* funny game */
     .funny-game {
-        padding:30px;
+        padding: 30px;
     }
+
     .funny-game-img {
         flex-direction: column;
     }
+
     .funny-game-img figcaption {
         margin-top: 20px;
         text-align: center;
     }
-    
+
+    /* online game section */
+
+    .online-games {
+        padding: 20px;
+    }
+
+    .online-game-content {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .online-game-part1-info {
+        padding: 10px;
+        text-align: center;
+    }
+    .online-games-title {
+        font-size: 2.4rem;
+        line-height: 45px; 
+        
+    }
+    .big-img{
+        width: 270px;
+    }
+    .small-img{
+        width: 150px;
+    }
+    .online-game-content2 {
+        margin-top: 180px;
+        flex-direction: column;
+    }
+    .online-game-part4-info {
+        padding:20px;
+        text-align: center;
+    }
+
 }
 
 
-@media screen and (min-width:576px) and (max-width:960px) {
+/* 
+
+
+
+
+*/
+ @media screen and (min-width:576px) and (max-width:960px) {
     header {
         padding: 40px;
     }
@@ -360,13 +487,49 @@ nav {
         padding: 20px;
         text-align: center;
     }
+
     /* funny game */
     .funny-game-img {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }    
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .funny-game-img figcaption {
         text-align: center;
     }
+        /* online game section */
+
+        .online-games {
+            padding: 30px;
+        }
+    
+        .online-game-content {
+            flex-direction: column;            
+            align-items: center;
+    
+        }
+        .online-game-part1-info {
+            padding: 10px;
+            text-align: center;
+        }
+        .online-games-title {
+            font-size: 2.4rem;
+            line-height: 45px; 
+            
+        }
+        .big-img{
+            width: 550px;
+        }
+        .small-img{
+            width: 250px;
+        }
+        .online-game-content2 {
+            margin-top: 180px;
+            flex-direction: column-reverse;
+        }
+        .online-game-part4-info {
+            padding:20px;
+            text-align: center;
+        }
 
 }
