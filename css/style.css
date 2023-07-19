@@ -145,10 +145,14 @@ nav {
     margin-left: 15px;
     background: #4EC5F7;
 }
+
 /* about-us css */
-.about-us{
+.about-us {
     margin-top: 20px;
+    padding: 15px 120px;
+    gap: 30px
 }
+
 .about-purpose {
     color: #534C64;
     font-size: 20px;
@@ -162,6 +166,99 @@ nav {
     font-weight: 700;
     line-height: 45px;
 }
+
+.about-img img {
+    width: 650px;
+}
+
+.about-info {
+    text-align: right;
+}
+
+.about-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-des {
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* funny-game section css */
+
+.funny-game {
+    text-align: center;
+    padding: 15px 120px;
+}
+
+.funny-game-title {
+    color: #0B0223;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.funny-game-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.funny-game-des {
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.funny-game-img {
+    display: flex;
+}
+
+.funny-game-img figure {
+    padding: 10px;
+    margin: 0;
+}
+
+.funny-game-img img {
+    width: 250px;
+}
+
+.funny-game-img figcaption {
+    margin-top: 20px;
+    text-align: left;
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 576px) {
     header {
@@ -191,37 +288,52 @@ nav {
         width: 10px;
         margin: 0;
     }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-info {
+        padding: 20px;
+    }
+
+    /* about-us responsive */
+    .about-us {
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    .about-img img {
+        width: 350px;
+    }
+
+    .about-info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 2.6rem;
+    }
+
+    .about-purpose span {
+        font-size: 16px;
+    }
+    /* funny game */
+    .funny-game {
+        padding:30px;
+    }
+    .funny-game-img {
+        flex-direction: column;
+    }
+    .funny-game-img figcaption {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
 }
 
-/* about-us css */
-.about-us {
-    padding: 15px 120px;
-    gap: 30px
-}
-
-.about-img img {
-    width: 650px;
-}
-
-.about-info {
-    text-align: right;
-}
-
-.about-title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.about-des {
-    color: #534C64;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-}
 
 @media screen and (min-width:576px) and (max-width:960px) {
     header {
@@ -230,6 +342,31 @@ nav {
 
     .banner-info {
         padding-right: 40px;
+    }
+
+    .banner-info {
+        padding: 10px;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-info {
+        padding: 20px;
+        text-align: center;
+    }
+    /* funny game */
+    .funny-game-img {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }    
+    .funny-game-img figcaption {
+        text-align: center;
     }
 
 }
